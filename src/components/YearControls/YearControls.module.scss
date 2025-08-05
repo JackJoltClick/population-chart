@@ -1,0 +1,14 @@
+.controlsContainer { display: flex; align-items: center; gap: 1rem; }
+.mainControls { display: flex; align-items: center; gap: 0.75rem; }
+.navButton { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid #e5e5e5; background: white; border-radius: 50%; cursor: pointer; transition: all 0.2s ease; color: #525252; }
+.navButton:hover:not(:disabled) { background: #f0f9ff; border-color: #0ea5e9; color: #0369a1; transform: translateY(-1px); }
+.navButton:disabled { opacity: 0.4; cursor: not-allowed; background: #f5f5f5; color: #a3a3a3; }
+.navButton svg { width: 16px; height: 16px; }
+.yearDropdown { padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 600; border: 1px solid #e5e5e5; border-radius: 0.5rem; background: white; cursor: pointer; transition: all 0.2s ease; min-width: 80px; text-align: center; color: #171717; }
+.yearDropdown:hover { border-color: #0ea5e9; }
+.yearDropdown:focus { outline: none; border-color: #0ea5e9; box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1); }
+.playButton { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: none; background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%); border-radius: 50%; cursor: pointer; transition: all 0.3s ease; color: white; box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3); }
+.playButton:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4); }
+.playButton.playing { background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); animation: pulse 2s infinite; }
+.playButton svg { width: 18px; height: 18px; }
+@keyframes pulse { 0% { box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3); } 50% { box-shadow: 0 4px 16px rgba(245, 158, 11, 0.5); } 100% { box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3); } }

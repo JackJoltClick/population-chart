@@ -1,0 +1,46 @@
+{
+  "name": "population-chart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "next": "15.4.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.0",
+    "@eslint/eslintrc": "^3",
+    "@storybook/addon-a11y": "^9.1.1",
+    "@storybook/addon-actions": "^9.0.8",
+    "@storybook/addon-docs": "^9.1.1",
+    "@storybook/addon-onboarding": "^9.1.1",
+    "@storybook/addon-vitest": "^9.1.1",
+    "@storybook/nextjs": "^9.1.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "eslint-plugin-storybook": "^9.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "sass": "^1.89.2",
+    "storybook": "^9.1.1",
+    "typescript": "^5"
+  }
+}
